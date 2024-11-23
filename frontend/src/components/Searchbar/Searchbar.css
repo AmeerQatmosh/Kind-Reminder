@@ -1,0 +1,42 @@
+/* ExpandingSearchBar.css */
+.search-input {
+    width: 0;
+    opacity: 0;
+    transition: width 0.4s ease, opacity 0.4s ease;
+    border-top-left-radius: 50px;    /* Round left corners */
+    border-bottom-left-radius: 50px; /* Round left corners */
+    border-right: none;               /* Remove right border to connect with button */
+  }
+  
+  .expanded .search-input {
+    width: 200px; /* Set the expanded width */
+    opacity: 1;
+    padding: 5px 10px;
+    border: 1px solid #ced4da;
+    border-top-left-radius: 45px;
+    border-bottom-left-radius: 50px;
+  }
+  
+  .collapsed .search-input {
+    padding: 0; /* Remove padding when collapsed */
+    border: none;
+  }
+  
+/* ExpandingSearchBar.css */
+.search-toggle-button {
+    margin-left: 10px;
+    width: 40px;  /* Size of the button */
+    height: 40px; /* Size of the button */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-color:  #558BC7 !important;
+    color: #558BC7 !important;
+  }
+  
+
+  .search-toggle-button:hover {
+    background-color: white !important;
+    color: black !important;
+  }
+  

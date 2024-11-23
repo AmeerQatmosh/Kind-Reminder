@@ -1,0 +1,55 @@
+/* Navbar style */
+.custom-navbar {
+    background-color: #10437D; 
+    padding: 10px 20px;
+}
+
+/* Nav-links style */
+.nav-link-custom {
+  color: #ffffff;
+  font-size: 18px;
+  text-decoration: none;
+  transition: color 0.3s ease, transform 0.3s ease;
+}
+
+/* Hover effect: change color and add a zoom effect */
+.nav-link-custom:hover {
+  color: #ff6347; /* Tomato color on hover */
+  transform: scale(1.1); /* Slight zoom-in effect */
+}
+
+
+/* SignIn, SignUp buttons style */
+
+.capsule-button {
+  background-color: transparent !important;
+  border: 0.5 px !important;
+  border-radius: 50px !important;
+  border-color: #558BC7 !important;
+  padding: 0.5rem 1.5rem;
+  color: white;
+  transition: background-color 0.3s, color 0.3s;
+}
+
+.capsule-button:hover {
+  background-color: white !important;
+  color: black !important;
+}
+
+
+
+/* Separator Style */
+.separator {
+  width: 1px; /* Width of the separator */
+  height: 30px; /* Height of the separator */
+  background-color:#558BC7;/* Color of the separator */
+  margin: 0 15px; /* Spacing around the separator */
+}
+
+
+/* Search-bar style */
+.capsule-search{
+  border-radius: 50px !important;
+  border-color: #558BC7 !important;
+  color: black ;
+}
