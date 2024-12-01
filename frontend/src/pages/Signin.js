@@ -1,6 +1,6 @@
 import React from 'react';
 import { Form, FormControl, FormFloating, Button } from 'react-bootstrap';
-import '../../src/styles/Signin.css'
+import '../../src/styles/SignIn.css'
 function SignIn() {
     return (
     <Form>

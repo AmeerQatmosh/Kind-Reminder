@@ -1,6 +1,5 @@
 import React from 'react';
 import gear from '../images/settings.gif';
-import '../App.css';
 function Events() {
   return(
     <div className="App">

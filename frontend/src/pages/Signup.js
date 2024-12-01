@@ -11,7 +11,7 @@ function SignUp() {
           type="email"
           placeholder="name@example.com"
         />
-        <label htmlFor="floatingInputCustom">Email address</label>
+        <label htmlFor="floatingInputCustom">Email Address</label>
       </FormFloating>
 
       <FormFloating className="mb-3">

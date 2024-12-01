@@ -1,5 +1,4 @@
 import React from 'react';
-import '../App.css';
 import gear from '../images/settings.gif';
 function Reminders() {
   return(

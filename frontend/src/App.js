@@ -6,8 +6,10 @@ import Tasks from './pages/Tasks';
 import CalendarPage from './pages/Calendar';
 import Reminders from './pages/Reminders';
 import Events from './pages/Events';
-import SignIn from './pages/Signin';
-import SignUp from './pages/Signup';
+import SignIn from './pages/SignIn';
+import SignUp from './pages/SignUp';
+import './App.css'
+
 function App() {
   return (
     <Router>

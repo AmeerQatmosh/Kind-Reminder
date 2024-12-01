@@ -1,18 +1,11 @@
-import React from 'react';
-import '../App.css';
-import gear from '../images/settings.gif';
-function Tasks() {
-  return (
-    <div className="App">
-      <header className="App-header">
-      <img src={gear} className="App-logo" alt="logo" />
-        <code>
-          This page is under progress!
-        </code>
-      </header>
-    </div>
-  );
+import React from "react";
+import InputTask from "../components/Tasks/InputTask";
+function Tasks(){
+    return(
+        <div className="App">
+            <InputTask />
+        </div>
+      );
 }
-
 
 export default Tasks;
