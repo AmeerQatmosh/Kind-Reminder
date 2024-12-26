@@ -8,6 +8,7 @@ import Reminders from './pages/Reminders';
 import Events from './pages/Events';
 import SignIn from './pages/SignIn';
 import SignUp from './pages/SignUp';
+import Footer from './components/Footer/footer';
 import './App.css'
 
 function App() {
@@ -23,6 +24,8 @@ function App() {
         <Route path='/signin'    element={<SignIn />}       />
         <Route path='/signup'    element={< SignUp />}      />
       </Routes>
+      <br />
+      <Footer />
     </Router>
   );
 }
