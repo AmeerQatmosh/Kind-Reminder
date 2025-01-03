@@ -14,7 +14,6 @@ function SignIn() {
               id="floatingInputCustom"
               type="email"
               placeholder="name@example.com"
-              className="p-3 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500"
             />
             <label htmlFor="floatingInputCustom">Email address</label>
           </FormFloating>
@@ -24,7 +23,6 @@ function SignIn() {
               id="floatingPasswordCustom"
               type="password"
               placeholder="Password"
-              className="p-3 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500"
             />
             <label htmlFor="floatingPasswordCustom">Password</label>
           </FormFloating>
