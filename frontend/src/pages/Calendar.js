@@ -14,11 +14,11 @@ const CalendarPage = () => {
   return (
     <div className="bg-[#f7f9fc] min-h-screen">
       {/* Hero Section */}
-      <section className="bg-gradient-to-r from-blue-900 to-blue-400 text-white text-center py-20">
+      <section className="bg-gradient-to-r from-red-900 to-red-400 text-white text-center py-20">
         <h1 className="text-4xl md:text-6xl font-bold mb-4">Your Calendar</h1>
         <p className="text-lg md:text-xl mb-6">Manage your events, tasks, and reminders efficiently!</p>
         <Link to="/tasks">
-          <button className="bg-white text-blue-500 font-semibold py-2 px-6 rounded-full hover:bg-gray-100 transition duration-300">
+          <button className="bg-white text-red-500 font-semibold py-2 px-6 rounded-full hover:bg-gray-100 transition duration-300">
             View Tasks
           </button>
         </Link>

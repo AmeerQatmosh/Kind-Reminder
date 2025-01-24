@@ -23,25 +23,27 @@ const Reminders = () => {
     }
   ]);
 
+  const [input, setInput] = useState('');
+  const [date, setDate] = useState('');
+  const [time, setTime] = useState('');
+  const [description, setDescription] = useState('');
+
   const handleAddReminder = () => {
     // This function can be updated to add new reminders via a form or API call
-    const newReminder = {
-      title: 'New Reminder',
-      date: '2024-12-30',
-      time: '5:00 PM',
-      description: 'Reminder description goes here.'
+    if (input.trim()) {
+      setReminders([...reminders, { title: input, date: date, time: time, description: description }]);
+      setInput('');
     };
-    setReminders([...reminders, newReminder]);
-  };
+  }
 
   return (
     <div className="bg-[#f7f9fc] min-h-screen">
       {/* Hero Section */}
-      <section className="bg-gradient-to-r from-blue-900 to-blue-400 text-white text-center py-20">
+      <section className="bg-gradient-to-r from-orange-900 to-orange-400 text-white text-center py-20">
         <h1 className="text-4xl md:text-6xl font-bold mb-4">Upcoming Reminders</h1>
         <p className="text-lg md:text-xl mb-6">Stay on top of your tasks with timely reminders!</p>
         <Link to="/tasks">
-          <button className="bg-white text-blue-500 font-semibold py-2 px-6 rounded-full hover:bg-gray-100 transition duration-300">
+          <button className="bg-white text-orange-500 font-semibold py-2 px-6 rounded-full hover:bg-gray-100 transition duration-300">
             View Tasks
           </button>
         </Link>
@@ -62,7 +64,7 @@ const Reminders = () => {
               <div className="mt-4">
                 <Link
                   to={`/reminders/${index}`}
-                  className="text-blue-500 hover:text-blue-700 font-semibold"
+                  className="text-orange-500 hover:text-orange-700 font-semibold"
                 >
                   View Details
                 </Link>
@@ -74,12 +76,42 @@ const Reminders = () => {
 
       {/* Add Reminder Button */}
       <section className="text-center py-8">
-        <button
-          onClick={handleAddReminder}
-          className="bg-blue-500 text-white py-2 px-6 rounded-lg hover:bg-blue-600 transition duration-300"
-        >
-          Add New Reminder
-        </button>
+        <div className="max-w-xl mx-auto">
+          <input
+            type="text"
+            placeholder="Add a new reminder..."
+            value={input}
+            onChange={(e) => setInput(e.target.value)}
+            className="w-full px-4 py-2 rounded-lg border border-gray-300 text-lg mb-4"
+          />
+          <input
+            type="text"
+            placeholder="Date"
+            value={date}
+            onChange={(e) => setDate(e.target.value)}
+            className="w-full px-4 py-2 rounded-lg border border-gray-300 text-lg mb-4"
+          />
+          <input
+            type="text"
+            placeholder="Time"
+            value={time}
+            onChange={(e) => setTime(e.target.value)}
+            className="w-full px-4 py-2 rounded-lg border border-gray-300 text-lg mb-4"
+          />
+          <input
+            type="text"
+            placeholder="Description"
+            value={description}
+            onChange={(e) => setDescription(e.target.value)}
+            className="w-full px-4 py-2 rounded-lg border border-gray-300 text-lg mb-4"
+          />
+          <button
+            onClick={handleAddReminder}
+            className="bg-orange-500 text-white py-2 px-6 rounded-lg hover:bg-orange-600 transition duration-300"
+          >
+            Add New Reminder
+          </button>
+        </div>
       </section>
     </div>
   );
