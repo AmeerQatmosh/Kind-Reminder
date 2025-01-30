@@ -4,11 +4,11 @@ import { Form, FormControl, FormFloating, Button, Row, Col } from 'react-bootstr
 
 function SignIn() {
   return (
-    <div className="bg-gray-100 min-h-screen py-10">
-      <div className="max-w-md mx-auto bg-white p-8 rounded-lg shadow-lg">
+    <div className="bg-gray-100 min-h-screen py-10 flex items-center justify-center">
+      <div className="bg-white shadow-lg rounded-lg p-8 w-full max-w-md">
+        <h3 className="text-2xl font-bold mb-6 text-center">Sign In</h3>
         <Form>
-          <h3 className="text-2xl font-bold mb-6 text-center">Sign In</h3>
-
+        
           <FormFloating className="mb-4">
             <FormControl
               id="floatingInputCustom"

@@ -9,6 +9,8 @@ import Events from './pages/Events';
 import SignIn from './pages/SignIn';
 import SignUp from './pages/SignUp';
 import Footer from './components/Footer/footer';
+import Contact from './components/Contact/contact';
+import About from './components/About/about';
 import './App.css'
 
 function App() {
@@ -24,7 +26,11 @@ function App() {
         <Route path='/signin'    element={<SignIn />}       />
         <Route path='/signup'    element={< SignUp />}      />
       </Routes>
-      <br />
+    
+      <Routes>
+        <Route path='contact'      element={<Contact />}      />
+        <Route path='about'        element={<About />}        />
+      </Routes>
       <Footer />
     </Router>
   );
