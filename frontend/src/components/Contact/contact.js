@@ -54,7 +54,7 @@ function Contact() {
               {/* Contact Us Button */}
               <Button 
                 type="submit" 
-                className="w-auto d-block mx-auto py-2 px-4 rounded-lg mb-4 hover:bg-blue-600 transition duration-300"
+                className="w-full bg-blue-500 text-white py-2 px-4 rounded-lg mb-4 hover:bg-blue-600 transition duration-300"
               >
                 Contact Us
               </Button>
