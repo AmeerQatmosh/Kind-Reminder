@@ -1,6 +1,5 @@
 import React from 'react';
-import { Link } from 'react-router-dom';
-import { Form, FormControl, FormFloating, Button, Row, Col } from 'react-bootstrap';
+import { Form, FormControl, FormFloating, Button } from 'react-bootstrap';
 
 function ForgetPassword() {
   return (
