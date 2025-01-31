@@ -38,7 +38,7 @@ function SignIn() {
               />
             </Col>
             <Col className="text-right">
-              <a href="/forgot-password" className="text-blue-500 text-sm hover:underline hover:text-blue-700">
+              <a href="/resetpassword" className="text-blue-500 text-sm hover:underline hover:text-blue-700">
                 Forgot Password?
               </a>
             </Col>
